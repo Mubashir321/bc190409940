@@ -1,0 +1,266 @@
+/*--------------css reset-------------------*/
+/*--------------------------------------*/
+*{
+	margin:0px;
+	padding: 0px:;
+}
+/*--------------main funtion------------------------*/
+.main{
+	width: 100%;
+}
+.container{
+	height: 100%;
+    width: 100%;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/*-------------header section-------------------------*/
+.headersection{
+	width: 100%;
+	position: fixed;
+	height: 10vh;		
+	display: flex;
+	align-items: center;	
+    justify-content: space-between;
+    background-color: rgba(209,209,209,0.3);
+}
+.nav{
+	display: flex;	
+}
+.nav a {
+	color: white;
+	font-family: arial;
+    padding: 1px 5px;
+    margin: 1px 5px;
+    display: inline;
+    text-decoration: none;
+    }
+.logo{
+	width: 70px;
+	height: 40px;
+    align-content: center;
+    display: flex;  
+}
+/*----------------section 1----------------------*/
+
+.s1{
+	width: 100%;
+	height: 30vh;
+	padding: 200PX 0px;
+	background-size: 100% 100%;
+	background-image: url("../Sample Pictures/mon.jpg");
+	background-repeat: repeat-y;
+}
+
+/*-----------------section 2---------------------*/
+.s2{
+	width: 100%;
+	padding: 200PX 0px;
+	background-size: 100%;
+	background-image: url("../Sample Pictures/Lighthouse.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+}
+
+/*----------------section 3----------------------*/
+.s3{
+
+	width: 100%;
+	padding: 200PX 0px;
+	background-size: 100%;
+	background-image: url("../Sample Pictures/Jellyfish.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+}
+
+/*----------------section 4----------------------*/
+/*----------------Services Section----------------------*/
+.s4{
+	float: left;
+	width: 100%;
+	padding: 0PX 0px;
+	background-size: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	align-content: center;
+	background-image: url("../Sample Pictures/mon.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+}
+#Services h1 {
+	color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.Services{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+.box {
+    width: 200px;
+    height: 210px;
+    border: 1px solid brown;
+    border-radius: 5%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 150px;
+    margin: 150px 5px;
+    background-color: rgba(219,219,219,0.1);
+}
+.box img{
+     width: 200px;
+     height: 200px;
+     border-radius: 10px;
+}
+.box h2,p{
+	color: white;
+    text-align: center;
+    font-family: arial;
+}
+/*----------------section 5----------------------*/
+/*----------------about us & footer----------------------*/
+.s5{
+	float: left;
+	width: 100%;
+	height: 500px;
+	padding: 0PX 0px;
+	background-size: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	align-content: center;
+	background-image: url("../Sample Pictures/Lighthouse.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+}
+
+/*______________________contact us____________________________*/
+.s5 h1{
+	color: white;
+	font-size: 35px;
+	font-family: arial;
+	padding: 55px 0px;
+}
+.contact{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-size: 1rem;
+	font-family: arial;
+	padding-bottom: 100px;
+}
+.field{
+	width:100%;
+}
+.area{
+	width: 100%;
+	height: 20vh;
+}
+.btn{
+	padding: 5px 200px;
+}
+
+
+
+/*----------------------Footer Section--------------------------*/
+footer{
+	position: fixed;
+	width: 100%;
+	height: 20vh;
+	background-color: rgba(0,0,0,1);
+
+}
+
+
+
+
+
+/*----------------------Media Query-----------------------------*/
+@media(max-width: 1000px){
+	.s4{
+        height: auto;
+	}
+    .Services{
+        flex-direction: column;
+        padding-top: 600px;
+        padding-bottom: 610px;
+    }
+    .home{
+        height: 70vh;
+    }
+    .box img{
+     width: 400px;
+     height: 320px;
+     }
+    .box {
+    width: 350px;
+    height: 350px;
+    border: 2px solid brown;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 100px;
+    margin: 5px 5px;
+    background-color: rgba(209,209,209,0.1);
+    }
+ 
+}
+@media(max-width: 600px){
+	.s4{
+        height: auto;
+	}
+    .headersection{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav a {
+    color: white;
+    font-size: 12px;
+    font-family: arial;
+    padding: 0px 2px;
+    margin: 0px 2px;
+    display: inline;
+    text-decoration: none;
+    }
+    .Services{
+        flex-direction: column;
+        padding-top: 550px;
+        padding-bottom: 550px;
+    }
+    .home{
+        height: 60vh;
+    }
+    .box img{
+     width: 250px;
+     height: 250px;
+     }
+    .box {
+    width: 250px;
+    height: 255px;
+    border: 1px solid brown;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 150px;
+    margin: 5px 5px;
+    background-color: rgba(209,209,209,0.1);
+    }
+    #Services h1 {
+    margin-top: 10px;
+    }
+    .btn{
+	padding: 0px 100px;
+    }
+}
